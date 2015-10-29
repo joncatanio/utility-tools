@@ -26,9 +26,10 @@ do
 	
 	printf "\033[33;36m"
 	$EXECUTE < $f
+	STATUS=$?
 	printf "\033[0m"
 
-	if [ "$?" = "0" ]; then
+	if [ $STATUS -eq 0 ]; then
 		echo "\033[33;32m$f TEST COMPLETE. \033[0m"
 		echo 
 	else
