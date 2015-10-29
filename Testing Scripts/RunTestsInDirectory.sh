@@ -8,11 +8,12 @@
 # Green Text = Program successfully ran and finished with no error code.
 # Red Text = Program finished with a non-zero exit status.
 
-# Input executable name.
+# Input executable name and the file extension of the test files..
 EXECUTABLE_NAME=""
+EXTENSION=""
 
 declare "EXECUTE=java -ea $EXECUTABLE_NAME" 
-FILES=Tests/*.txt
+FILES=Tests/*.$EXTENSION
 
 # Compile code.
 make
