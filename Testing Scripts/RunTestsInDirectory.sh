@@ -2,8 +2,11 @@
 # This script assumes the user is redirecting input
 # into a program through stdin. The user must create a 
 # directory named "Tests" and place all test files, as .txt,
-# into this directory. This script will also try to use 
-# a makefile if there is one. 
+# into this directory. 
+#
+# This script will also try to use a makefile if there is one. 
+#
+# This script executes with assertions enabled.
 #
 # Green Text = Program successfully ran and finished with no error code.
 # Red Text = Program finished with a non-zero exit status.
