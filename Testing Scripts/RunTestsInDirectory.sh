@@ -18,7 +18,7 @@ FILES=Tests/*.$EXTENSION
 # Compile code.
 make
 
-# Loop through all .txt files in the Tests directory.
+# Loop through all files in the Tests directory.
 for f in $FILES
 do
 	echo
